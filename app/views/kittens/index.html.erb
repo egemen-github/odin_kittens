@@ -1,0 +1,14 @@
+<%= link_to 'Create a Kitten', new_kitten_path %>
+<% @kittens.each do |k| %><hr>
+    Name:
+    <%= k.name %><br>
+    Age:
+    <%= k.age %><br>
+    Cuteness:
+    <%= k.cuteness %><br>
+    Softness:
+    <%= k.softness %><br>
+    <%= link_to 'Edit', edit_kitten_path(k)%>
+    <%= link_to 'Show', kitten_path(k) %>
+    <%= button_to 'Delete', kitten_path(k), method: :delete %>
+<% end %>

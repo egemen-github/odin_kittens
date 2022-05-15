@@ -1,0 +1,8 @@
+<%= form_with model: @kitten do |form| %>
+  <%= form.text_field :name, placeholder: 'name' %></br>
+  <%= form.text_field :age, placeholder: 'age' %></br>
+  <%= form.text_field :cuteness, placeholder: 'cuteness' %></br>
+  <%= form.text_field :softness, placeholder: 'softness' %></br>
+  <%= form.submit %>
+<% end %>
+<%= link_to 'Main Page', root_path %>
