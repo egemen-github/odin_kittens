@@ -1,24 +1,14 @@
-# README
+# odin_kittens
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a fast and straightforward project where I set up a Rails app to be a data-producing API… which is just a fancy way of saying that all controller methods will render data instead of HTML.
 
-Things you may want to cover:
+Intended to be responding API calls e.g.,
 
-* Ruby version
+```
+response = RestClient.get("http://localhost:3000/kittens/13", :accept => :json)
+```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Printing the response and we recieve this: 
+```
+{"id":13,"name":"lion","age":"2.5","cuteness":"extreme","softness":"like a cloud","created_at":"2022-05-16T06:02:47.256Z","updated_at":"2022-05-16T06:02:47.256Z"}
+```
